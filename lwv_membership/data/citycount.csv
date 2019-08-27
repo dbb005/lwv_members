@@ -1,0 +1,295 @@
+city,count,percent
+Akron,48,1.93
+Albany,1,0.04
+Alexandria,1,0.04
+Amelia,1,0.04
+Amesville,1,0.04
+Amherst,2,0.08
+Ann Arbor,2,0.08
+Ashtabula,6,0.24
+Athens,73,2.94
+"Athens,",1,0.04
+Aurora,15,0.6
+Austinburg,1,0.04
+Avon,3,0.12
+Avon Lake,1,0.04
+Batavia,2,0.08
+"Batavia,",1,0.04
+Bath,1,0.04
+Bay Village,20,0.81
+Beachwood,7,0.28
+Beavercreek,13,0.52
+Bellbrook,4,0.16
+Bellebrook,1,0.04
+Bellefontaine,1,0.04
+Berea,3,0.12
+Bethel,2,0.08
+Bexley,7,0.28
+Blacklick,3,0.12
+Blue Ash,1,0.04
+Bluffton,1,0.04
+Boardman,4,0.16
+Bowling Green,68,2.74
+Bratenahl,1,0.04
+Brecksville,1,0.04
+Brooklyn,1,0.04
+Brookville,3,0.12
+Brunswick,1,0.04
+Burbank,1,0.04
+CINCINNATI,1,0.04
+Caledonia,1,0.04
+Canal Winchester,2,0.08
+Canfield,7,0.28
+Canton,15,0.6
+Centerville,21,0.85
+Chagrin Falls,6,0.24
+Chardon,1,0.04
+Chesterland,4,0.16
+Chillicothe,23,0.93
+Cincinati,1,0.04
+Cincinnati,240,9.67
+Cincinnnati,2,0.08
+Circleville,2,0.08
+Clarksburg,1,0.04
+Clayton,3,0.12
+Cleveland,38,1.53
+Cleveland Heights,46,1.85
+Cleveland Hts,1,0.04
+Cleveland Hts.,1,0.04
+Clinton,2,0.08
+Cncinnati,1,0.04
+College Corner,2,0.08
+Columbia Stn.,1,0.04
+Columbus,167,6.73
+Concord,3,0.12
+Conneaut,3,0.12
+Copley,2,0.08
+Cortland,8,0.32
+Covington,2,0.08
+Creston,1,0.04
+Cuyahoga Falls,10,0.4
+Cuyahoga Fls,1,0.04
+Cygnet,1,0.04
+Dalton,1,0.04
+Dayton,125,5.04
+Delaware,29,1.17
+Dublin,19,0.77
+East Cleveland,9,0.36
+Eastlake,1,0.04
+Elida,1,0.04
+Elyria,5,0.2
+Englewood,5,0.2
+Fairborn,3,0.12
+Fairfield,1,0.04
+Fairlawn,2,0.08
+Fairview Park,7,0.28
+Farmdale,1,0.04
+Findlay,2,0.08
+Fortuna,1,0.04
+Fremont,1,0.04
+Ft. Thomas,1,0.04
+Gahanna,4,0.16
+Galena,2,0.08
+Galion,2,0.08
+Garrettsville,3,0.12
+Geneva,3,0.12
+Geneva on the Lake,1,0.04
+Germantown,1,0.04
+Girard,3,0.12
+Glendale,1,0.04
+Grafton,1,0.04
+Grandview Heights,2,0.08
+Granville,58,2.34
+Greenville,9,0.36
+Grove City,1,0.04
+Groveport,2,0.08
+Guysville,1,0.04
+HAmilton,1,0.04
+Hamilton,4,0.16
+Harrison,1,0.04
+Heath,3,0.12
+Hillard,1,0.04
+Hilliard,6,0.24
+Hilo,1,0.04
+Hiram,2,0.08
+Holland,5,0.2
+Hopewell,1,0.04
+Hubbard,3,0.12
+Huber Heights,1,0.04
+Hudson,51,2.05
+JBLM,1,0.04
+Jacksonville,1,0.04
+Jamestown,2,0.08
+Jefferson,4,0.16
+Johnstown,2,0.08
+Kent,95,3.83
+Kettering,13,0.52
+Kingston,1,0.04
+Kingsville,1,0.04
+Kinsman,1,0.04
+Kirtland,2,0.08
+Lafayette,1,0.04
+Lakeside,1,0.04
+Lakewood,37,1.49
+Lebanon,2,0.08
+Lehigh Acres,1,0.04
+Lewis Center,1,0.04
+Liberty Township,1,0.04
+Lima,24,0.97
+Lincoln,1,0.04
+Lithopolis,1,0.04
+London,1,0.04
+Los Angeles,1,0.04
+Louisville,5,0.2
+Loveland,7,0.28
+Lucasville,1,0.04
+Lyndhurst,7,0.28
+Madeira,1,0.04
+Madison,1,0.04
+Maineville,1,0.04
+Mantua,2,0.08
+Marion,18,0.73
+Marysville,2,0.08
+Mason,2,0.08
+Massillon,5,0.2
+Maumee,2,0.08
+Medina,3,0.12
+Medway,2,0.08
+Mentor,9,0.36
+Mentor on the Lake,1,0.04
+Miamisburg,4,0.16
+Middletown,1,0.04
+Milford,16,0.64
+Millfield,1,0.04
+Mineral Ridge,1,0.04
+Minerva Park,1,0.04
+Mogadore,2,0.08
+Moncks Corner,1,0.04
+Monclova,1,0.04
+Monroe Falls,1,0.04
+Montgomery,1,0.04
+Moreland Hills,3,0.12
+Moscow,1,0.04
+Mount Vernon,1,0.04
+Munroe Falls,4,0.16
+N. Ridgeville,2,0.08
+Nelsonville,1,0.04
+New Albany,3,0.12
+New Carlisle,2,0.08
+New Franklin,2,0.08
+New Lebanon,2,0.08
+Newark,14,0.56
+Newport,1,0.04
+North Canton,7,0.28
+North Olmsted,12,0.48
+North Ridgeville,1,0.04
+North Royalton,2,0.08
+Northfield,1,0.04
+Northwood,1,0.04
+Oakwood,1,0.04
+Oberlin,117,4.71
+Olmsted Falls,1,0.04
+Orange Village,1,0.04
+Oregon,1,0.04
+Orrville,1,0.04
+Ostrander,1,0.04
+Ottawa Hills,3,0.12
+Owensville,2,0.08
+Oxford,72,2.9
+Painesville,3,0.12
+Painesville Twp.,1,0.04
+Parma,2,0.08
+Pataskala,2,0.08
+Pemberville,1,0.04
+Peninsula,5,0.2
+Pepper Pike,4,0.16
+Perryaburg,1,0.04
+Perrysbug,1,0.04
+Perrysburg,51,2.05
+Pickerington,1,0.04
+Piketon,1,0.04
+Poland,8,0.32
+Port Clinton,1,0.04
+Portsmouth,3,0.12
+Powell,3,0.12
+Radnor,1,0.04
+Ravenna,8,0.32
+Reminderville,1,0.04
+Republic,1,0.04
+Reynoldsburg,1,0.04
+Richfield,1,0.04
+Richmond Hts.,1,0.04
+Roaming Shores,1,0.04
+Rocky River,23,0.93
+Rootstown,1,0.04
+Rossford,1,0.04
+Rudolph,1,0.04
+Russell Twp.,1,0.04
+Sagamore Hills,3,0.12
+Seven Hills,1,0.04
+Shaker Heights,120,4.83
+Shaker Hts,7,0.28
+Shaker Hts.,2,0.08
+Sheffield Lake,1,0.04
+Smithville,1,0.04
+Solon,2,0.08
+Somerville,1,0.04
+South Bloomingville,1,0.04
+South Euclid,8,0.32
+Spring Valley,1,0.04
+Springboro,2,0.08
+Springfield,2,0.08
+Stow,10,0.4
+Streetsboro,3,0.12
+Strongsville,4,0.16
+Struthers,2,0.08
+Swanton,1,0.04
+Sylvania,14,0.56
+Tallmadge,27,1.09
+Terrace Park,2,0.08
+Thornville,1,0.04
+Tiffin,16,0.64
+Tipp City,1,0.04
+Toledo,43,1.73
+Trotwood,1,0.04
+Troy,3,0.12
+Trumbull,1,0.04
+Uniontown,4,0.16
+Unionville,1,0.04
+University Heights,13,0.52
+Upper Arlington,7,0.28
+Upper Sandsky,1,0.04
+Vandalia,1,0.04
+Vienna,1,0.04
+W. Salem,1,0.04
+Wapakoneta,1,0.04
+Warren,10,0.4
+Washington Court House,1,0.04
+Waterville,6,0.24
+Wauseon,1,0.04
+Waynesville,1,0.04
+Wellington,2,0.08
+West Carrollton,2,0.08
+West Chester,1,0.04
+West Farmington,2,0.08
+West Portsmojuth,1,0.04
+West Portsmouth,1,0.04
+Westerville,18,0.73
+Westlake,18,0.73
+Weston,1,0.04
+Wheelersburg,1,0.04
+Whitehall,1,0.04
+Wickliffe,3,0.12
+Williamsburg,2,0.08
+Willoughby,5,0.2
+Willoughby Hills,3,0.12
+Willowick,1,0.04
+Wooster,35,1.41
+Worthington,22,0.89
+Wyoming,1,0.04
+Xenia,5,0.2
+Yellow Springs,4,0.16
+Yougstown,1,0.04
+Youngstown,27,1.09
+,,
+Total,"2,482",100
