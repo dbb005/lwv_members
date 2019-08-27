@@ -45,7 +45,7 @@ mapcolorsss <- inlmisc::GetColors((nrow(state_senate)))
 ggplot() +
   geom_sf(data = districts, 
           aes(fill = factor(GEOID)),
-          alpha=0.4, color = "BLACK", size=0.01) +
+          alpha=0, color = "BLACK", size=0.6) +
   geom_point(data = dots, 
              aes(y = Latitude, x = Longitude),
              color = "BLACK", size=0.5, shape=18) +
@@ -58,12 +58,12 @@ ggplot() +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
         plot.subtitle = element_text(size = 16, hjust = 0.5)) +
-  ggsave("plots/congressional_1.png", width=6, height=6)
+  ggsave("plots/congressional_nocolor.png", width=7, height=7)
 
 ggplot() +
   geom_sf(data = state_house, 
           aes(fill = factor(GEOID)),
-          alpha=0.4, color = "BLACK", size=0.01) +
+          alpha=0, color = "BLACK", size=0.6) +
   geom_point(data = dots, 
              aes(y = Latitude, x = Longitude),
              color = "BLACK", size=0.6) +
@@ -76,12 +76,12 @@ ggplot() +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
         plot.subtitle = element_text(size = 16, hjust = 0.5)) +
-  ggsave("plots/state_house_1.png", width=6, height=6)
+  ggsave("plots/state_house_nocolor.png", width=7, height=7)
 
 ggplot() +
   geom_sf(data = state_senate, 
           aes(fill = factor(GEOID)),
-          alpha=0.4, color = "BLACK", size=0.01) +
+          alpha=0, color = "BLACK", size=0.6) +
   geom_point(data = dots, 
              aes(y = Latitude, x = Longitude),
              color = "BLACK", size=0.6) +
@@ -94,7 +94,7 @@ ggplot() +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
         plot.subtitle = element_text(size = 16, hjust = 0.5)) +
-  ggsave("plots/state_senate_1.png", width=6, height=6)
+  ggsave("plots/state_senate_nocolor.png", width=7, height=7)
 
 ####
 
