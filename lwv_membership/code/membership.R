@@ -48,7 +48,7 @@ ggplot() +
           alpha=0, color = "BLACK", size=0.6) +
   geom_point(data = dots, 
              aes(y = Latitude, x = Longitude),
-             color = "BLACK", size=0.5, shape=18) +
+             color = "BLACK", size=0.35, shape=18) +
   geom_sf(data = ohio, 
           alpha=0, color = "BLACK", size = 0.6) +
   scale_fill_manual(values = sample(mapcolorsd),
@@ -68,7 +68,7 @@ ggplot() +
              aes(y = Latitude, x = Longitude),
              color = "BLACK", size=0.6) +
   geom_sf(data = ohio, 
-          alpha=0, color = "BLACK", size = 0.75) +
+          alpha=0, "BLACK", size=0.35, shape=18) +
   scale_fill_manual(values = sample(mapcolorssh),
                     guide = FALSE) +
   ggtitle("League of Women Voters of Ohio Membership", 
@@ -82,13 +82,13 @@ ggplot() +
   geom_sf(data = state_senate, 
           aes(fill = factor(GEOID)),
           alpha=0, color = "BLACK", size=0.6) +
+  geom_sf(data = ohio, fill = "gray76",  
+          alpha=0.3, color = "BLACK", size = 0.75) +
   geom_point(data = dots, 
              aes(y = Latitude, x = Longitude),
-             color = "BLACK", size=0.6) +
-  geom_sf(data = ohio, 
-          alpha=0, color = "BLACK", size = 0.75) +
-  scale_fill_manual(values = sample(mapcolorsss),
-                    guide = FALSE) +
+             color = "BLACK", size=0.35, shape=18) +
+  #scale_fill_manual(values = sample(mapcolorsss),
+                    #guide = FALSE) +
   ggtitle("League of Women Voters of Ohio Membership", 
           subtitle = "Ohio Senate Districts") +
   theme_void() +
