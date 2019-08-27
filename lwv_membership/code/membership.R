@@ -45,11 +45,11 @@ mapcolorsss <- inlmisc::GetColors((nrow(state_senate)))
 ggplot() +
   geom_sf(data = districts, 
           aes(fill = factor(GEOID)),
-          alpha=0.5,
+          alpha=0.4          ,
           color = NA) +
   geom_point(data = dots, 
              aes(y = Latitude, x = Longitude),
-             size=0.30) +
+             color = "BLACK", size=0.75) +
   geom_sf(data = ohio, 
           alpha=0, color = "BLACK", size = 0.75) +
   scale_fill_manual(values = sample(mapcolorsd),
@@ -59,11 +59,11 @@ ggplot() +
 ggplot() +
   geom_sf(data = state_house, 
           aes(fill = factor(GEOID)),
-          alpha=0.5,
+          alpha=0.4,
           color = NA) +
   geom_point(data = dots, 
              aes(y = Latitude, x = Longitude),
-             size=0.30) +
+             color = "BLACK", size=0.3) +
   geom_sf(data = ohio, 
           alpha=0, color = "BLACK", size = 0.75) +
   scale_fill_manual(values = sample(mapcolorssh),
