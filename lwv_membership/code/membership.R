@@ -42,10 +42,12 @@ mapcolorsd <- inlmisc::GetColors((nrow(districts)))
 mapcolorssh <- inlmisc::GetColors((nrow(state_house)))
 mapcolorsss <- inlmisc::GetColors((nrow(state_senate)))
 
+
+# With (random) colors ----------------------------------------------------
 ggplot() +
   geom_sf(data = districts, 
           aes(fill = factor(GEOID)),
-          alpha=0, color = "BLACK", size=0.6) +
+          alpha=0.3, color = "BLACK", size=0.6) +
   geom_point(data = dots, 
              aes(y = Latitude, x = Longitude),
              color = "BLACK", size=0.35, shape=18) +
@@ -58,37 +60,92 @@ ggplot() +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
         plot.subtitle = element_text(size = 16, hjust = 0.5)) +
-  ggsave("plots/congressional_nocolor.png", width=7, height=7)
+  ggsave("plots/congressional.png", width=7, height=7)
 
 ggplot() +
   geom_sf(data = state_house, 
           aes(fill = factor(GEOID)),
-          alpha=0, color = "BLACK", size=0.6) +
+          alpha=0.3, color = "BLACK", size=0.6) +
   geom_point(data = dots, 
              aes(y = Latitude, x = Longitude),
-             color = "BLACK", size=0.6) +
+             color = "BLACK", size=0.35, shape=18) +
   geom_sf(data = ohio, 
-          alpha=0, "BLACK", size=0.35, shape=18) +
+          alpha=0, color = "BLACK", size = 0.6) +
   scale_fill_manual(values = sample(mapcolorssh),
                     guide = FALSE) +
-  ggtitle("League of Women Voters of Ohio Membership", 
+  ggtitle("League of Women Voters of Ohio Membership",  
           subtitle = "Ohio House Districts") +
+  theme_void() +
+  theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
+        plot.subtitle = element_text(size = 16, hjust = 0.5)) +
+  ggsave("plots/state_house.png", width=7, height=7)
+
+ggplot() +
+  geom_sf(data = state_senate, 
+          aes(fill = factor(GEOID)),
+          alpha=0.3, color = "BLACK", size=0.6) +
+  geom_point(data = dots, 
+             aes(y = Latitude, x = Longitude),
+             color = "BLACK", size=0.35, shape=18) +
+  geom_sf(data = ohio, 
+          alpha=0, color = "BLACK", size = 0.6) +
+  scale_fill_manual(values = sample(mapcolorsss),
+                    guide = FALSE) +
+  ggtitle("League of Women Voters of Ohio Membership",  
+          subtitle = "Ohio Senate Districts") +
+  theme_void() +
+  theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
+        plot.subtitle = element_text(size = 16, hjust = 0.5)) +
+  ggsave("plots/state_senate.png", width=7, height=7)
+
+# No color --------------------------------------------------------------
+ggplot() +
+  geom_sf(data = districts, show.legend = FALSE,
+          aes(fill = factor(GEOID)),
+          alpha=0, color = "BLACK", size=0.6) +
+  geom_sf(data = ohio, fill = "grey60",  
+          alpha=0.3, color = "BLACK", size = 0.75) +
+  geom_point(data = dots, 
+             aes(y = Latitude, x = Longitude),
+             color = "BLACK", size=0.35, shape=18) +
+  #scale_fill_manual(values = sample(mapcolorsss),
+  #guide = FALSE) +
+  ggtitle("League of Women Voters of Ohio Membership", 
+          subtitle = "Congressional Districts") +
+  theme_void() +
+  theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
+        plot.subtitle = element_text(size = 16, hjust = 0.5)) +
+  ggsave("plots/congressional_nocolor.png", width=7, height=7)
+
+ggplot() +
+  geom_sf(data = state_house, show.legend = FALSE,
+          aes(fill = factor(GEOID)),
+          alpha=0, color = "BLACK", size=0.6) +
+  geom_sf(data = ohio, fill = "grey60",  
+          alpha=0.3, color = "BLACK", size = 0.75) +
+  geom_point(data = dots, 
+             aes(y = Latitude, x = Longitude),
+             color = "BLACK", size=0.35, shape=18) +
+  #scale_fill_manual(values = sample(mapcolorsss),
+  #guide = FALSE) +
+  ggtitle("League of Women Voters of Ohio Membership", 
+          subtitle = "Congressional Districts") +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
         plot.subtitle = element_text(size = 16, hjust = 0.5)) +
   ggsave("plots/state_house_nocolor.png", width=7, height=7)
 
 ggplot() +
-  geom_sf(data = state_senate, 
+  geom_sf(data = state_senate, show.legend = FALSE,
           aes(fill = factor(GEOID)),
           alpha=0, color = "BLACK", size=0.6) +
-  geom_sf(data = ohio, fill = "gray76",  
+  geom_sf(data = ohio, fill = "grey60",  
           alpha=0.3, color = "BLACK", size = 0.75) +
   geom_point(data = dots, 
              aes(y = Latitude, x = Longitude),
              color = "BLACK", size=0.35, shape=18) +
   #scale_fill_manual(values = sample(mapcolorsss),
-                    #guide = FALSE) +
+  #guide = FALSE) +
   ggtitle("League of Women Voters of Ohio Membership", 
           subtitle = "Ohio Senate Districts") +
   theme_void() +
