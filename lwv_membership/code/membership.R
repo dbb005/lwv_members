@@ -21,6 +21,8 @@ ohio <- states(cb = TRUE) %>% filter(STATEFP == 39)
 districts <- congressional_districts(cb = TRUE) %>% filter(STATEFP == 39)
 state_house <- state_legislative_districts(state = "oh", cb = TRUE, house = "lower")
 state_senate <- state_legislative_districts(state = "oh", cb = TRUE, house = "upper")
+cities <- places(cb = TRUE, state = "oh")
+counties <- counties(cb = T, state = "oh")
 
 # Dot operations ----------------------------------------------------------
 dots_sf <- dots %>% st_as_sf(., coords = c("Longitude", "Latitude"), crs = 4326)
@@ -59,8 +61,8 @@ ggplot() +
           subtitle = "Congressional Districts") +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
-        plot.subtitle = element_text(size = 16, hjust = 0.5)) +
-  ggsave("plots/congressional.png", width=7, height=7)
+        plot.subtitle = element_text(size = 16, hjust = 0.5)) #+
+  #ggsave("plots/congressional.png", width=7, height=7)
 
 ggplot() +
   geom_sf(data = state_house, 
@@ -77,8 +79,8 @@ ggplot() +
           subtitle = "Ohio House Districts") +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
-        plot.subtitle = element_text(size = 16, hjust = 0.5)) +
-  ggsave("plots/state_house.png", width=7, height=7)
+        plot.subtitle = element_text(size = 16, hjust = 0.5)) #+
+  #ggsave("plots/state_house.png", width=7, height=7)
 
 ggplot() +
   geom_sf(data = state_senate, 
@@ -95,8 +97,8 @@ ggplot() +
           subtitle = "Ohio Senate Districts") +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
-        plot.subtitle = element_text(size = 16, hjust = 0.5)) +
-  ggsave("plots/state_senate.png", width=7, height=7)
+        plot.subtitle = element_text(size = 16, hjust = 0.5)) #+
+  #ggsave("plots/state_senate.png", width=7, height=7)
 
 # No color --------------------------------------------------------------
 ggplot() +
@@ -114,8 +116,8 @@ ggplot() +
           subtitle = "Congressional Districts") +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
-        plot.subtitle = element_text(size = 16, hjust = 0.5)) +
-  ggsave("plots/congressional_nocolor.png", width=7, height=7)
+        plot.subtitle = element_text(size = 16, hjust = 0.5)) #+
+  #ggsave("plots/congressional_nocolor.png", width=7, height=7)
 
 ggplot() +
   geom_sf(data = state_house, show.legend = FALSE,
@@ -129,11 +131,11 @@ ggplot() +
   #scale_fill_manual(values = sample(mapcolorsss),
   #guide = FALSE) +
   ggtitle("League of Women Voters of Ohio Membership", 
-          subtitle = "Congressional Districts") +
+          subtitle = "Ohio House Districts") +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
-        plot.subtitle = element_text(size = 16, hjust = 0.5)) +
-  ggsave("plots/state_house_nocolor.png", width=7, height=7)
+        plot.subtitle = element_text(size = 16, hjust = 0.5)) #+
+  #ggsave("plots/state_house_nocolor.png", width=7, height=7)
 
 ggplot() +
   geom_sf(data = state_senate, show.legend = FALSE,
@@ -150,8 +152,8 @@ ggplot() +
           subtitle = "Ohio Senate Districts") +
   theme_void() +
   theme(plot.title = element_text(face="bold", size = 20, hjust = 0.5), 
-        plot.subtitle = element_text(size = 16, hjust = 0.5)) +
-  ggsave("plots/state_senate_nocolor.png", width=7, height=7)
+        plot.subtitle = element_text(size = 16, hjust = 0.5)) #+
+  #ggsave("plots/state_senate_nocolor.png", width=7, height=7)
 
 ####
 
